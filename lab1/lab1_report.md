@@ -1,12 +1,12 @@
-University: [ITMO University](https://itmo.ru/ru/)
-Faculty: [FICT](https://fict.itmo.ru)
-Course: [Network programming](https://github.com/itmo-ict-faculty/network-programming)
-Year: 2024/2025
-Group: K34212
-Author: Deineko Roman Pavlovich
-Lab: Lab1
-Date of create: 28.09.2024
-Date of finished: 30.09.2025
+University: [ITMO University](https://itmo.ru/ru/)\
+Faculty: [FICT](https://fict.itmo.ru)\
+Course: [Network programming](https://github.com/itmo-ict-faculty/network-programming)\
+Year: 2024/2025\
+Group: K34212\
+Author: Deineko Roman Pavlovich\
+Lab: Lab1\
+Date of create: 28.09.2024\
+Date of finished: 30.09.2024
 
 ## Лабораторная работа №1 "Установка CHR и Ansible, настройка VPN"
 
