@@ -34,8 +34,44 @@ Date of finished: 30.09.2024
 ![VirtualBox_Ubuntu_29_09_2024_22_52_39](https://github.com/user-attachments/assets/f98040e1-07c8-421c-ac21-0c653c806d3c)
 
 На стороне клиента был использован файл с прописанной конфигурацией, включая необходимые для подключения сертификаты и ключи
-
-
+```
+client
+dev tun
+proto udp
+remote 1194
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+remote-cert-tls server
+tls-version-min 1.2
+cipher AES-128-CBC
+auth SHA256
+tls-client
+auth-nocache
+verb 3
+<ca>
+-----BEGIN CERTIFICATE-----
+...
+-----END CERTIFICATE-----
+</ca>
+<cert>
+-----BEGIN CERTIFICATE-----
+...
+-----END CERTIFICATE-----
+</cert>
+<key>
+-----BEGIN PRIVATE KEY-----
+...
+-----END PRIVATE KEY-----
+</key>
+key-direction 1
+<tls-auth>
+-----BEGIN OpenVPN Static key V1-----
+...
+-----END OpenVPN Static key V1-----
+</tls-auth>
+```
 
 
 
