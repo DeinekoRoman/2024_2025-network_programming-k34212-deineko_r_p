@@ -16,7 +16,7 @@ Date of finished: 27.12.2024
 
 Аналогично первой лабораторной работе была создана ВМ на базе CHR. Далее к ней было осуществлено подключение через openvpn.
 
-<p align="center"><img src="./Screenshots/Capture.png" width=700></p>
+<p align="center"><img src="./Screenshots/Capture.PNG" width=700></p>
 
 Соединение было успешно установлено, все устройства связаны друг с другом.
 
