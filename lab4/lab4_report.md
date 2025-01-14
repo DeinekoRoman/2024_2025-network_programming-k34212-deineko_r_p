@@ -17,15 +17,15 @@ Date of finished: 14.01.2025
 
 Готовый образ виртуальной машины с Ubuntu 24.04 был скачан со страницы с инструкцией, чтобы не ждать сборки через vagrant.
 
-<p align="center"><img src="./Screenshots/Capture.PNG" width=700></p>
+<p align="center"><img src="./Screenshots/Capture.png" width=700></p>
 
 С помощью команды make run была поднята виртуальная сеть mininet.
 
-<p align="center"><img src="./Screenshots/Capture1.PNG" width=700></p>
+<p align="center"><img src="./Screenshots/Capture1.png" width=700></p>
 
 Проверка связности показывает, что узлы не пингуются, так как по умолчанию в компилируемом файле basic.p4 коммутаторы настроены так, чтобы отбрасывать все пакеты.
 
-<p align="center"><img src="./Screenshots/Capture2.PNG" width=700></p>
+<p align="center"><img src="./Screenshots/Capture2.png" width=700></p>
 
 Для того, чтобы узлы стали доступны для передачи пакетов, в парсер и депарсер были добавлены заголовки ipv4 и ethernet. Также в раздел MyIngress была добавлена функция ipv4_forward и проверка на валидность заголовка.
 
@@ -99,7 +99,7 @@ control MyIngress(inout headers hdr,
 
 В результате внесенных изменений узлы начали пинговаться.
 
-<p align="center"><img src="./Screenshots/Capture3.PNG" width=700></p>
+<p align="center"><img src="./Screenshots/Capture3.png" width=700></p>
 
 Для выполнения второго задания понадобится редактировать файл basic_tunnel.p4, в результате чего будет получен коммутатор, способный осуществлять пересылку как на основе содержимого пользовательского заголовка инакпсуляции, так и обычного ipv4. В парсер был добавлен фрагмент кода, позволяющий извлекать либо myTunnel заголовок, либо ipv4 заголовок на основе etherType поля в заголовке Ethernet.
 
@@ -158,23 +158,23 @@ control MyIngress(inout headers hdr,
 
 - Без туннелирования
 
-<p align="center"><img src="./Screenshots/Capture4.PNG" width=700></p>
+<p align="center"><img src="./Screenshots/Capture4.png" width=700></p>
 
 - Без туннелирования (адрес назначения изменен)
 
-<p align="center"><img src="./Screenshots/Capture7.PNG" width=700></p>
+<p align="center"><img src="./Screenshots/Capture7.png" width=700></p>
 
 - С туннелированием
 
-<p align="center"><img src="./Screenshots/Capture5.PNG" width=700></p>
+<p align="center"><img src="./Screenshots/Capture5.png" width=700></p>
 
 - С туннелированием (адрес назначения изменен, но dst_id оставлен таким же, как при прошлой проверке)
 
-<p align="center"><img src="./Screenshots/Capture6.PNG" width=700></p>
+<p align="center"><img src="./Screenshots/Capture6.png" width=700></p>
 
 Топология сети:
 
-<p align="center"><img src="./Screenshots/Capture8.PNG" width=700></p>
+<p align="center"><img src="./Screenshots/Capture8.png" width=700></p>
 
 ### <a name="section2">Вывод</a>
 
