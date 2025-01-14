@@ -1,0 +1,75 @@
+{
+    "_meta": {
+        "hostvars": {
+            "chr1": {
+                "custom_fields": {},
+                "device_roles": [
+                    "router"
+                ],
+                "device_types": [
+                    "cloud-hosted-router"
+                ],
+                "is_virtual": false,
+                "local_context_data": [
+                    null
+                ],
+                "locations": [],
+                "manufacturers": [
+                    "mikrotik"
+                ],
+                "regions": [],
+                "serial": "",
+                "services": [],
+                "site_groups": [],
+                "sites": [
+                    "nginxxx"
+                ],
+                "status": {
+                    "label": "Active",
+                    "value": "active"
+                },
+                "tags": []
+            },
+            "chr2": {
+                "custom_fields": {},
+                "device_roles": [
+                    "router"
+                ],
+                "device_types": [
+                    "cloud-hosted-router"
+                ],
+                "is_virtual": false,
+                "local_context_data": [
+                    null
+                ],
+                "locations": [],
+                "manufacturers": [
+                    "mikrotik"
+                ],
+                "regions": [],
+                "serial": "",
+                "services": [],
+                "site_groups": [],
+                "sites": [
+                    "nginxxx"
+                ],
+                "status": {
+                    "label": "Active",
+                    "value": "active"
+                },
+                "tags": []
+            }
+        }
+    },
+    "all": {
+        "children": [
+            "ungrouped"
+        ]
+    },
+    "ungrouped": {
+        "hosts": [
+            "chr1",
+            "chr2"
+        ]
+    }
+}
